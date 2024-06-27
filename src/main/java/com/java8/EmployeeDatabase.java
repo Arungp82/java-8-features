@@ -1,0 +1,19 @@
+package com.java8;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class EmployeeDatabase {
+    public static List<Employee> getEmployees(){
+        List<Employee> employeeList = Arrays.asList(
+                new Employee(21,"qrqwfa","IT", 63456L),
+                new Employee(1,"zafgs","CSC", 12323L),
+                new Employee(43,"afdsa","Mechanical", 4563L),
+                new Employee(653,"uryytyu","Electronics", 52345L),
+                new Employee(8745,"cnvbc","Electricals", 76435637L),
+                new Employee(876,"oyuiot","Civil", 34567897L),
+                new Employee(345,"wertwre","Architecture", 3245344L)
+        );
+        return employeeList;
+    }
+}
