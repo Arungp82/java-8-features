@@ -2,6 +2,7 @@ package com.java8;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class CalcAvgSalAndRoundNearInt {
 
@@ -17,7 +18,13 @@ public class CalcAvgSalAndRoundNearInt {
 
         // To Calculate average salary and round up to nearest Integer
 
-
+        Long employeeResult = employeeList
+                .stream()
+                .mapToLong(Employee::getSalary)
+                .boxed()
+                .collect(Collectors.collectingAndThen(Collectors.averagingLong(Long::longValue),
+                        Math::round));
+System.out.println(employeeResult);
     }
 
 }
