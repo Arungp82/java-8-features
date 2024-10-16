@@ -1,7 +1,9 @@
 package com.java8;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
 
 public class EmployeeDatabase {
     public static List<Employee> getEmployees(){
@@ -15,5 +17,16 @@ public class EmployeeDatabase {
                 new Employee(345,"wertwre","Architecture", 3245344L)
         );
         return employeeList;
+    }
+
+    public static List<Employee> getManyEmployees() {
+
+        List<Employee> manyEmployeesList = new ArrayList<>();
+        for (int i = 1; i < 10000000; i++) {
+            manyEmployeesList.add(
+                    new Employee(i,"A"+i,"Department",Long.valueOf(new Random().nextLong(1000*100))));
+        }
+        return manyEmployeesList;
+
     }
 }
