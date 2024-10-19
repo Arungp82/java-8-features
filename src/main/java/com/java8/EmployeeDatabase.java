@@ -14,7 +14,10 @@ public class EmployeeDatabase {
                 new Employee(653,"uryytyu","Electronics", 52345L),
                 new Employee(8745,"cnvbc","Electricals", 76435637L),
                 new Employee(876,"oyuiot","Civil", 34567897L),
-                new Employee(345,"wertwre","Architecture", 3245344L)
+                new Employee(345,"wertwre","Architecture", 3245344L),
+                new Employee(8745,"cnvbc","Electricals", 765637L),
+                new Employee(876,"oyuiot","Civil", 345679L),
+                new Employee(345,"wertwre","Architecture", 35344L)
         );
         return employeeList;
     }
