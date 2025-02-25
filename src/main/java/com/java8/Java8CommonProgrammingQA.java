@@ -28,8 +28,8 @@ public class Java8CommonProgrammingQA {
         //2. Find the Students who stays in Karnataka and sort them by their names
 
         List<Student> studentsByCity = studentList.stream().filter(student -> student.getCity().equals("Karnataka"))
-                .sorted(Comparator.comparing(Student::getFirstName,Comparator.reverseOrder())).collect(Collectors.toList());
-        // System.out.println(studentsByCity);
+                .sorted(Comparator.comparing(Student::getFirstName)).collect(Collectors.toList());
+        System.out.println("studentsByCity -> "+studentsByCity);
 
         // 3. Find all departments names
 
@@ -42,8 +42,8 @@ public class Java8CommonProgrammingQA {
                 .stream().map(Student::getDept)
                 .collect(Collectors.toSet());
 
-        //System.out.println(deptNames);
-        //System.out.println(deptNamesInSet);
+        System.out.println("deptNames -> "+deptNames);
+        System.out.println("deptNamesInSet -> "+deptNamesInSet);
 
         //4.  Find all the contact numbers
         List<String> contacts = studentList.stream()
