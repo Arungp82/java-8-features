@@ -9,11 +9,11 @@ public class CalcAvgSalAndRoundNearInt {
     public static void main(String[] args) {
         List<Employee> employeeList = Arrays.asList(
                 new Employee(1,"George","CSC",65000L),
-                new Employee(1,"Singh","IT",80000L),
-                new Employee(1,"Kumar","ECE",70000L),
-                new Employee(1,"Ram","Mech",50000L),
-                new Employee(1,"Suresh","Civil",45000L),
-                new Employee(1,"Ramesh","VLSI",90000L)
+                new Employee(2,"Singh","IT",80000L),
+                new Employee(3,"Kumar","ECE",70000L),
+                new Employee(4,"Ram","Mech",50000L),
+                new Employee(5,"Suresh","Civil",45000L),
+                new Employee(6,"Ramesh","VLSI",90000L)
         );
 
         // To Calculate average salary and round up to nearest Integer
